@@ -1,162 +1,151 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
-body {
-    background-color: #073071;
+body{
+    font-family: Arial, Helvetica, sans-serif, ;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url("img/header.png");
+    align-items: center;
+    display: flex;
+    padding: 100px 40px;
 }
 
-.marco-exterior{
+header .logo img{
+    height: 200px;
+    background-image: url ("img/destiny.png");
+    position:absolute;
+    top: -20%;
+    left: 39%;
+    transform: translate(50%, 90%);
+    align-items: center top;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    word-spacing: 50px;
+}
+
+nav ul li a{
+    color: rgb(71, 120, 192);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.eti{
+    font-family;
+    position:absolute;
+    top: 13%;
+    left: 20%;
+    transform: translate(50%, 90%);
+}
+
+#inicio{
+    background-color:#000000;
+    color: rgb(56, 112, 197);
     height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-gap: 15px;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 59px 1fr;
-}
-.marco-titulo{
-    display: grid;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    height: 65px;
-}
-.titulo{
-    display: grid;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    height: 65px;
-    width: 100vw;
-    background-clip: text;
-    color:plum;
-    font-family: "Secular One", sans-serif;
-}
-.ruleta {
-    height: 350px;
-    width: 50vw;
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-items: center;
     justify-content: center;
-    }
-    
-.movimiento {
-    display: grid;
-    }
-    
-    @keyframes rotate {
-    0% {
-    transform: rotate (0deg);
-    }
-    100% {
-    transform: rotate (360deg);
-    }
-    }
-    
-.marco-exterior .titulo {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    }
-    
-.marco-exterior .cont-flecha {
-    grid-column: 1/2;
-    grid-row:  2/3;
-    width: 50px;
-    height: 50px;
-    }
-    
-.marco-exterior .ruleta {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    }
-    
-.cono {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    animation: rotate 5s infinite linear;
-    border: 5px solid #f7981f;
-    border-radius: 50%;
-    }
-    
-.tamaño {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    }
-    
-.flecha{
-    width: 50px;
-    height: 50px;
-    background: #cacaca;
-    clip-path: polygon(
-    40% 0%,
-    40% 20%,
-    100% 20%,
-    100% 80%,
-    40% 80%,
-    40% 100%,
-    0% 50%,
-    );
-    transform: rotate (270deg);
-    }
-    .circulo {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background: blue;
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
-      
-      .cono1{
-        background: #ff64bb;
-        /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-      }
-      
-      .cono2 {
-        background: #fff;
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(45deg);
-      }
-      
-      .cono3 {
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(90deg);
-        background: #00b7ff;
-      }
-      
-      .cono4 {
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(135deg);
-        background: #536eff;
-      }
-      
-      .cono5 {
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(180deg);
-        background: #3116f0;
-      }
-      
-      .cono6 {
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(225deg);
-        background: #ffe300;
-      }
-      
-      .cono7 {
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(270deg);
-        background: red;
-      }
-      
-      .cono8 {
-        clip-path: polygon(50% 0, 50% 50%, 0 0);
-        transform: rotate(315deg);
-        background: #ff6225;
-      }
-      
+    text-align: center;
+}
+
+.inicio-contenido h1{
+    font-size: 3rem;
+}
+
+.inicio-contenido p{
+   font-size: 1.5rem; 
+}
+
+#productos{
+    color:white;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+#productos h2{
+    font-size: 2.5rem;
+
+}
+
+#productos p{
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.servicios{
+    background-color: #000000;
+    color:white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicios h2{
+    font-size: 2.5rem;
+}
+
+.servicios-item{
+    margin-bottom: 20px;
+}
+
+.servicios-item h3{
+    font-size: 1.8rem;
+}
+
+.servicios-item p{
+    font-size: 1rem;
+}
+
+.contacto{
+    padding: 50px 20px;
+    color:white;
+    background-color: #000000;
+    text-align: center;
+}
+
+.contacto form{
+   max-width: 600px;
+   margin: 0 auto; 
+}
+
+.contacto label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contacto input, .contacto textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto button:hover{
+    background-color: #555;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
